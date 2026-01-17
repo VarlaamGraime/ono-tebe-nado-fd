@@ -1,1 +1,287 @@
-/* место для вашего кода */
+/* header */
+
+.header {
+  padding: 92px 50px 92px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__menu {
+  width: 392px;
+}
+
+.header__link-list {
+  display: flex;
+  padding: 0;
+  gap: 32.7px;
+  padding-bottom: 7px;
+  font-size: 18px;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__link-list-item_no-bulit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+  color: var(--main-text-color);
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  max-width: 264px;
+  font-size: 18px;
+  line-height: 24.3px;
+  font-style: normal;
+  color: var(--main-text-color);
+  text-underline-offset: 5px;
+}
+
+.header__address {
+  max-width: 240px;
+  justify-self: end;
+  padding-bottom: 6px;
+}
+
+/* cover */
+.cover {
+  background-size: cover;
+  background-image: url("/ono-tebe-nado-fd/images/lotus-flower.png");
+  min-height: 757px;
+  width: 1100px;
+  position: relative;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.coover__title {
+  text-transform: uppercase;
+  color: var(--adit-text-color);
+  font-size: 100px;
+  line-height: 106.99px;
+  letter-spacing: 30px;
+  padding: 0 20px 0 50px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  justify-self: start;
+  padding-top: 169px;
+}
+
+.aligned-text_center {
+  justify-self: center;
+  padding-top: 28px;
+}
+
+.aligned-text_right {
+  justify-self: end;
+  padding-top: 27px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  padding: 111px 50px 50px 50px;
+  justify-content: space-between;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  color: var(--adit-text-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 90%;
+}
+
+.no-letter-spacing {
+  letter-spacing: normal;
+}
+
+.bet-button {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--adit-text-color);
+  background-color: inherit;
+  border: solid 1px var(--adit-text-color);
+  padding: 12px 32px 11px 31px;
+}
+
+/* lots */
+
+.lots {
+  padding: 180px 24px 0 24px;
+}
+
+.lots__heading {
+  color: var(--main-text-color);
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  padding: 27px 0 30px 0;
+  flex-wrap: wrap;
+}
+
+.lots__card-list > li {
+  width: 334px;
+  min-height: 596px;
+  list-style: none;
+  position: relative;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+  color: var(--adit-text-color);
+}
+
+.card_type_film {
+  background-image: url("/ono-tebe-nado-fd/images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background-image: url("/ono-tebe-nado-fd/images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+  background-image: url("/ono-tebe-nado-fd/images/card-lot-03.jpg");
+}
+
+.card__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.card__text {
+  font-size: 20px;
+}
+
+.card__look-link-more {
+  padding-left: 40px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* about */
+
+.about {
+  padding: 120px 24px 180px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+}
+
+.about__column {
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 47px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 136px 25px 100px;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+/* footer */
+.footer {
+  padding: 0 50px 82px;
+  display: grid;
+  grid-template-columns: 242px 1fr 240px;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-link{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active{
+  text-decoration: none;
+}
+
+.footer__social-list{
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon{
+  width: 48px;
+}
