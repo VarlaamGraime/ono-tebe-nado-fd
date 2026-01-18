@@ -61,7 +61,7 @@
 .cover {
   background-size: cover;
   background-position: center;
-  background-image: url("/ono-tebe-nado-fd/images/lotus-flower.png");
+  background-image: url("../images/lotus-flower.png");
   min-height: 757px;
   width: 1100px;
   position: relative;
@@ -176,15 +176,15 @@
 }
 
 .card_type_film {
-  background-image: url("/ono-tebe-nado-fd/images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  background-image: url("/ono-tebe-nado-fd/images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  background-image: url("/ono-tebe-nado-fd/images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -215,7 +215,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
 }
-
 
 .about__logo {
   width: 240px;
